@@ -26,7 +26,6 @@ namespace M03UF5AC3.Persistence.Mapping
                 NpgsqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
-                    // ORM: [--,--,--] -----> ContactDTO
                     contact = NpgsqlUtils.GetComarca(reader);
                 }
             }
@@ -94,12 +93,29 @@ namespace M03UF5AC3.Persistence.Mapping
                 NpgsqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    // ORM: [--,--,--] -----> ContactDTO                  
                     Registre contact = NpgsqlUtils.GetComarca(reader);
                     contacts.Add(contact);
                 }
             }
             return contacts;
         }
+
+        /*
+        codi per a reiniciar la base de dades
+
+        DROP table if exists Consum;
+
+        Create table Consum (
+            id SERIAL NOT NULL PRIMARY KEY ,
+            anycomarca numeric(4),
+            codi numeric,
+            comarca varchar,
+            poblacio numeric,
+            domesticxarxa decimal,
+            acteconomiques decimal,
+            total decimal,
+            consumcapita decimal
+        )*/  
+
     }
 }
