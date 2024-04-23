@@ -4600,4 +4600,14 @@
     <Total>4</Total>
     <Consum_domèstic_per_càpita>4</Consum_domèstic_per_càpita>
   </Registre>
+  <Registre>
+    <Any>2013</Any>
+    <Codi_comarca>3</Codi_comarca>
+    <Comarca>ALT PENEDÈS, L'</Comarca>
+    <Població>55</Població>
+    <Domèstic_xarxa>5</Domèstic_xarxa>
+    <Activitats_econòmiques_i_fonts_pròpies>5</Activitats_econòmiques_i_fonts_pròpies>
+    <Total>5</Total>
+    <Consum_domèstic_per_càpita>5</Consum_domèstic_per_càpita>
+  </Registre>
 </ArrayOfRegistre>

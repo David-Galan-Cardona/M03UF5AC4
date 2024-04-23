@@ -11,7 +11,7 @@ namespace M03UF5AC3.Persistence.Utils
         {
             // Carregar la cadena de connexió a la base de dades des de l'arxiu de configuració
             IConfiguration config = new ConfigurationBuilder()
-            .AddJsonFile(@"C:\Users\argo\Documents\ADavid Galan\Visual studio m3\M03UF5AC4\M03UF5AC3\appsettings.json", optional: false, reloadOnChange: true)
+            .AddJsonFile(@"appsettings.json", optional: false, reloadOnChange: true)
             .Build();
 
             return config.GetConnectionString("MyPostgresConn");
